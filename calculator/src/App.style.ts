@@ -10,11 +10,16 @@ const rotate = keyframes`
 `
 
 export const AppContainer = styled.div`
-  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #282c34;
 `
 
 export const AppLogo = styled.img`
-  height: 40vmin;
+  height: 12rem;
   pointer-events: none;
 
   @media (prefers-reduced-motion: no-preference) {
@@ -23,12 +28,19 @@ export const AppLogo = styled.img`
 `
 
 export const AppHeader = styled.header`
-  background-color: #282c34;
-  min-height: 100vh;
+  flex: 0 0 12rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
   color: white;
+`
+
+export const Calculators = styled.section`
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 `
